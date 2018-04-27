@@ -1,0 +1,23 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+  <interface name="atech.e99.mpl">
+    <property name="person_removed" type="i" access="read"/>
+    <property name="person_updated" type="i" access="read"/>
+    <signal name="personAdded">
+      <arg name="name" type="s" direction="out"/>
+    </signal>
+    <signal name="personRemoved">
+      <arg name="name" type="s" direction="out"/>
+    </signal>
+    <method name="ipersonRemoved">
+      <arg type="i" direction="out"/>
+    </method>
+    <method name="ipersonUpdated">
+      <arg type="i" direction="out"/>
+    </method>
+    <method name="addPerson">
+      <arg name="person" type="s" direction="in"/>
+      <annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="Person"/>
+    </method>
+  </interface>
+</node>

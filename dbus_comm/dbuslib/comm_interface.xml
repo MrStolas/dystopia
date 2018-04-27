@@ -1,0 +1,15 @@
+<node>
+  <interface name="atech.e99.mpl.shm">
+    <method name="AddMember">
+      <arg name="memberdetails1" direction="in" type="a(ss)iy"/>
+      <arg name="response" direction="out" type="i"/>
+    </method>
+
+    <signal name="ChangesNotification">
+      <arg name="member_id" type="i"/>
+      <arg name="change" type="u"/>
+    </signal>
+
+    <property name="Verbose" type="b" access="readwrite"/>
+  </interface>
+</node>

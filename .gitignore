@@ -1,0 +1,8 @@
+/address_book/nbproject/
+/address_book/build/
+!/address_book/build/.gitkeep
+/dbus_comm/nbproject/
+/dbus_comm/build/
+/dbus_comm/dbuslib/build/
+/dbus_comm/dbuslib/build/.gitkeep
+!/dbus_comm/build/.gitkeep
